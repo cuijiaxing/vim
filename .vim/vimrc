@@ -70,10 +70,15 @@ set tags=./tags
 "set omni and key mapping
 filetype plugin on
 set omnifunc=syntaxcomplete#Complete
-highlight Pmenu guibg=black guifg=white
-highlight PmenuSel guibg=purple guifg=lightgrey
+highlight Pmenu ctermbg=238 gui=bold
+highlight PmenuSel ctermbg=54 gui=bold
 
 "补全完成后关闭tip提示窗
-autocmd CursorMovedI * if pumvisible() == 0|pclose|endif
-autocmd InsertLeave * if pumvisible() == 0|pclose|endif
+"autocmd CursorMovedI * if pumvisible() == 0|pclose|endif
+"autocmd InsertLeave * if pumvisible() == 0|pclose|endif
+"disable preview window
+set completeopt-=preview
+
+"use supertab
+let g:SuperTabDefaultCompletionType = "context"
 
