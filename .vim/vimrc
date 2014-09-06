@@ -9,6 +9,8 @@ map <silent> <F2> :NERDTreeToggle<CR>
 
 "将NERDTree 的窗口设置在vim窗口的右侧(默认为左侧)
 let NERDTreeWinPos="left"
+"在新tab中打开文件
+"let NERDTreeMapOpenInTab='<ENTER>'
 
 " 当打开NERDTree 窗口时, 自动显示Bookmarks
 let NERDTreeShowBookmarks=1
@@ -56,12 +58,6 @@ endif
 "Python 文件的一般设置, 比如不要tab等
 autocmd FileType python set tabstop=4 shiftwidth=4 softtabstop=4 expandtab
 autocmd FileType python map <F5> :!python %<CR>
-
-"选中状态下ctrl+c复制
-vmap<C-c> "+y
-
-"设置剪贴板来源为任意
-set clipboard=unnamed
 
 
 "set ctags

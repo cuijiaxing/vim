@@ -9,6 +9,8 @@ map <silent> <F2> :NERDTreeToggle<CR>
 
 "将NERDTree 的窗口设置在vim窗口的右侧(默认为左侧)
 let NERDTreeWinPos="left"
+"在新tab中打开文件
+"let NERDTreeMapOpenInTab='<ENTER>'
 
 " 当打开NERDTree 窗口时, 自动显示Bookmarks
 let NERDTreeShowBookmarks=1
@@ -57,12 +59,6 @@ endif
 autocmd FileType python set tabstop=4 shiftwidth=4 softtabstop=4 expandtab
 autocmd FileType python map <F5> :!python %<CR>
 
-"选中状态下ctrl+c复制
-vmap<C-c> "+y
-
-"设置剪贴板来源为任意
-set clipboard=unnamed
-
 
 "set ctags
 set tags=./tags
@@ -70,10 +66,15 @@ set tags=./tags
 "set omni and key mapping
 filetype plugin on
 set omnifunc=syntaxcomplete#Complete
-highlight Pmenu guibg=black guifg=white
-highlight PmenuSel guibg=purple guifg=lightgrey
+highlight Pmenu ctermbg=238 gui=bold
+highlight PmenuSel ctermbg=54 gui=bold
 
 "补全完成后关闭tip提示窗
-autocmd CursorMovedI * if pumvisible() == 0|pclose|endif
-autocmd InsertLeave * if pumvisible() == 0|pclose|endif
+"autocmd CursorMovedI * if pumvisible() == 0|pclose|endif
+"autocmd InsertLeave * if pumvisible() == 0|pclose|endif
+"disable preview window
+set completeopt-=preview
+
+"use supertab
+let g:SuperTabDefaultCompletionType = "context"
 

@@ -1,4 +1,6 @@
 let g:netrw_dirhistmax  =10
-let g:netrw_dirhist_cnt =2
+let g:netrw_dirhist_cnt =4
 let g:netrw_dirhist_1='/Users/cuijiaxing/Documents/moveha/moveha-private-property/analizer'
 let g:netrw_dirhist_2='/Users/cuijiaxing/Documents/moveha/moveha-private-property/server/frontend'
+let g:netrw_dirhist_3='/Users/cuijiaxing/Documents/moveha/moveha-private-property/crawler'
+let g:netrw_dirhist_4='/Users/cuijiaxing/Documents/moveha/moveha-private-property/main'
