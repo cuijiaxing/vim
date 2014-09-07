@@ -4,6 +4,11 @@ vim
 my vim configuration
 
 
+09/06
+
+recompiled the program to enable clipboard
+see the link below
+https://gist.github.com/dcosson/3686437
 
 09/05
 
