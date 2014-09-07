@@ -1,5 +1,3 @@
-"设置背景为浅色
-set background=dark
 
 " 在vim 启动的时候默认开启 NERDTree(autocmd可以缩写为au)
 "autocmd VimEnter * NERDTree
@@ -17,6 +15,8 @@ let NERDTreeShowBookmarks=1
 
 "语法高亮
 syntax on
+"设置背景为浅色
+colorscheme railscasts
 
 "设置(软)制表符宽度为4
 set tabstop=4
