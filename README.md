@@ -3,6 +3,9 @@ vim
 
 my vim configuration
 
+09/13
+
+1.增加ctags的支持,使用Ctrl + ]查看definition, 使用Ctrl+T返回跳转之前的位置
 
 09/06
 
