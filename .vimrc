@@ -80,3 +80,29 @@ set completeopt-=preview
 "use supertab
 let g:SuperTabDefaultCompletionType = "context"
 
+
+
+"set the color of the terminal
+set t_Co=256
+let g:Powerline_symbols="fancy"
+
+"added the pathogen
+call pathogen#infect()
+
+
+
+set guifont=Inconsolata\ for\ Powerline:h15
+let g:Powerline_symbols = 'fancy'
+set encoding=utf-8
+set t_Co=256
+set fillchars+=stl:\ ,stlnc:\
+set term=xterm-256color
+set termencoding=utf-8
+
+
+if has("gui_running")
+   let s:uname = system("uname")
+  if s:uname == "Darwin\n"
+	set guifont=Inconsolata\ for\ Powerline:h15
+   endif
+endif
