@@ -106,3 +106,7 @@ if has("gui_running")
 	set guifont=Inconsolata\ for\ Powerline:h15
    endif
 endif
+
+
+set nocompatible
+set laststatus=2
