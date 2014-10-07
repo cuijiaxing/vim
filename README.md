@@ -28,7 +28,7 @@ my vim configuration
 
 Key Mapping:
 
-<F2> 打开或者关闭Nerd_Tree
+%lt;F2%gt; 打开或者关闭Nerd_Tree
 
 <F3> 打开或者关闭TagList
 
