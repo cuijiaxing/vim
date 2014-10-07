@@ -63,7 +63,7 @@ autocmd FileType python map <F5> :!python %<CR>
 
 
 "set ctags
-set tags=./tags
+set tags=./tags,tags;
 
 "set omni and key mapping
 filetype plugin on
