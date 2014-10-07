@@ -28,11 +28,11 @@ my vim configuration
 
 Key Mapping:
 
-F2 打开或者关闭Nerd_Tree
+<F2> 打开或者关闭Nerd_Tree
 
-F3 打开或者关闭TagList
+<F3> 打开或者关闭TagList
 
-F4 打开或者关闭IndentGuides
+<F4> 打开或者关闭IndentGuides
 
-F5 执行python
+<F5> 执行python
 
