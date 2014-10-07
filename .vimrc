@@ -9,6 +9,9 @@ set background=dark
 "按下F2调出/隐藏 NERDTree
 map <silent> <F2> :NERDTreeToggle<CR>
 
+"按下F3调出/隐藏 Tlist
+map <silent> <F3> :TlistToggle<CR>
+
 "将NERDTree 的窗口设置在vim窗口的右侧(默认为左侧)
 let NERDTreeWinPos="left"
 "在新tab中打开文件
