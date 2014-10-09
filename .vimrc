@@ -116,3 +116,9 @@ endif
 
 set nocompatible
 set laststatus=2
+
+"让vim的tab标题显示当前的路径或者文件名
+let &titlestring=@%
+set title
+
+
