@@ -119,6 +119,14 @@ set laststatus=2
 
 "让vim的tab标题显示当前的路径或者文件名
 let &titlestring=@%
-set title
+set title 
+
+"设置作者信息
+let g:vimrc_author='Jiaxing Cui'
+let g:vimrc_email='cuijiaxing@gmail.com'
+let g:vimrc_homepage='www.cuijiaxing.com'
+nmap <F7> : AuthorInfoDetect<CR><CR>
+
+
 
 
