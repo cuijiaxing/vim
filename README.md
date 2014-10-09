@@ -1,7 +1,11 @@
 vim
 ===
 
+
 my vim configuration
+
+10/09 2014
+Added the plugin:authorinfo that can add authinfo to the header
 
 10/06
 
@@ -35,4 +39,6 @@ Key Mapping:
 < F4 > 打开或者关闭IndentGuides
 
 < F5 > 执行python
+
+< F7 > 添加作者信息在文件头
 
