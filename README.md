@@ -5,6 +5,10 @@ vim
 my vim configuration
 
 10/09 2014
+
+Added delimitMate for auto complete the brackets and quotes
+
+10/09 2014
 Added the plugin:authorinfo that can add authinfo to the header
 
 10/06
