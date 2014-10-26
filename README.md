@@ -44,5 +44,7 @@ Key Mapping:
 
 < F5 > 执行python
 
+< F6 > Autoformat code
+
 < F7 > 添加作者信息在文件头
 
