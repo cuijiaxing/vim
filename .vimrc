@@ -15,6 +15,9 @@ map <silent> <F3> :TlistToggle<CR>
 "按下F4调出/隐藏 IndentGuides
 map <silent> <F4> :IndentGuidesToggle<CR>
 
+"Press F6 to auto format the code
+noremap <F6> :Autoformat<CR><CR>
+
 "将NERDTree 的窗口设置在vim窗口的右侧(默认为左侧)
 let NERDTreeWinPos="left"
 "在新tab中打开文件
@@ -42,7 +45,7 @@ set nu
 
 "突出显示当前行
 set cursorline
-hi CursorLine cterm=NONE ctermbg=lightgrey ctermfg=white guibg=lightgrey guifg=white
+hi CursorLine cterm=NONE ctermbg=blue ctermfg=white guibg=lightyellow guifg=white
 
 "打开状态栏标尺
 "set ruler
