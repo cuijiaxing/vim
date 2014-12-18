@@ -45,7 +45,7 @@ set nu
 
 "突出显示当前行
 set cursorline
-hi CursorLine cterm=NONE ctermbg=blue ctermfg=white guibg=lightyellow guifg=white
+hi CursorLine cterm=NONE ctermbg=blue ctermfg=white guibg=blue guifg=white
 
 "打开状态栏标尺
 "set ruler
@@ -68,7 +68,6 @@ endif
 
 "Python 文件的一般设置, 比如不要tab等
 autocmd FileType python set tabstop=4 shiftwidth=4 softtabstop=4 expandtab
-autocmd FileType python map <F5> :!python %<CR>
 
 
 "set ctags
@@ -130,6 +129,16 @@ let g:vimrc_email='cuijiaxing@gmail.com'
 let g:vimrc_homepage='www.cuijiaxing.com'
 nmap <F7> : AuthorInfoDetect<CR><CR>
 
+"保持底部一直有n行空白
+set scrolloff=5
 
+"自动检测文件类型并执行该文件并且记录运行时间
+function RunWith(command)
+	execute "w"
+	execute "!clear;time " .a:command . " " . expand("%")
+endfunction
 
+autocmd FileType javascript nmap <F5> :call RunWith("node")<cr>
+autocmd FileType python nmap <F5> :call RunWith("python")<cr>
+"autocmd FileType python map <F5> :!python %<CR>
 
