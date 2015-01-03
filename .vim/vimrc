@@ -130,7 +130,7 @@ let g:vimrc_homepage='www.cuijiaxing.com'
 nmap <F7> : AuthorInfoDetect<CR><CR>
 
 "保持底部一直有n行空白
-set scrolloff=5
+set scrolloff=10
 
 "自动检测文件类型并执行该文件并且记录运行时间
 function RunWith(command)
